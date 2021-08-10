@@ -1,0 +1,162 @@
+body{
+    background-color: rgb(59, 208, 51);
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.p{
+    margin: 50px auto;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+h1{
+    text-align: center;
+}
+
+.column{
+    display: block;
+    text-align: center;
+    border: 2px solid black;
+    width: 170px;
+    height: 200px;
+    background-color: rgb(72, 155, 70);
+    margin: 8px;
+    margin-top: 100px;
+    float: left;
+}
+
+.container{
+    width: 1140px;
+    height: 425px;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+
+.row {
+    clear: both;
+}
+
+
+.p1, .p2, .p3, .p4{
+    display: none;
+}
+
+
+
+
+/* media */
+
+
+
+@media only screen and (max-width: 1140px){
+    
+    .p1{
+        display: block;
+    }
+    
+    .p2, .p3, .p4{
+        display: none;
+    }
+    
+    .column{
+        width: 250px;
+        margin-left: 46px;
+        margin-top: 30px;
+        background-color: rgb(99, 132, 133);
+    }
+    
+    .container{
+        width: 960px;
+        height: 500px;
+        border: 2px solid black;
+        margin: 0 auto;
+    }
+    
+}
+@media only screen and (max-width: 960px){
+
+    .p2{
+        display: block;
+    }
+    
+    .p1, .p3, .p4{
+        display: none;
+    }
+    
+    
+    .column{
+        width: 200px;
+        margin-left: 25px;
+        margin-top: 30px;
+        background-color: rgba(16, 149, 211, 0.7);
+    }
+    
+    
+    .container{
+        width: 720px;
+        height: 500px;
+        border: 2px solid black;
+        margin: 0 auto;
+    }
+    
+}
+@media only screen and (max-width: 720px){
+
+    
+    .p3{
+        display: block;
+    }
+    
+    .p2, .p1, .p4{
+        display: none;
+    }
+    
+    .column{
+        width: 200px;
+        margin-left: 41px;
+        margin-top: 30px;
+        background-color: rgba(237, 13, 13, 0.7);
+    }
+    
+    
+    .container{
+        width: 540px;
+        height: 755px;
+        border: 2px solid black;
+        margin: 0 auto;
+    }
+    
+}
+@media only screen and (max-width: 540px){
+    
+    
+    .p4{
+        display: block;
+    }
+    
+    .p2, .p3, .p1{
+        display: none;
+    }
+    
+    .column{
+        width: 150px;
+        margin-left: 28px;
+        margin-top: 30px;
+        background-color: rgba(195, 221, 21, 0.7);
+    }
+    
+    
+    .container{
+        width: 400px;
+        height: 740px;
+        border: 2px solid black;
+        margin: 0 auto;
+    }
+    
+}
